@@ -85,18 +85,18 @@
 		// 		unmute the video
 		// 		change the button text to "mute"
         if (video.muted) {
-            console.log("unmute")
+            console.log("unmute");
             video.muted = false;
-            document.querySelector("#mute").innerHTML = "mute"
+            document.querySelector("#mute").innerHTML = "mute";
         } 
 		// If the video is currently unmuted:  
 	 	//		log "mute" to the console
 		// 		mute the video
 		// 		change the button text to "unmute"
         else if (!video.muted) {
-            console.log("mute")
+            console.log("mute");
             video.muted = true;
-            document.querySelector("#mute").innerHTML = "unmute"
+            document.querySelector("#mute").innerHTML = "unmute";
         } 
 	}
 	volumeSlider.oninput = function() {
@@ -109,12 +109,12 @@
 	}
 	       
 	function gray() { 
-		console.log("In grayscale")
+		console.log("In grayscale");
 		// Utilize the existing grayscale class.
         video.style.setProperty('filter', 'grayscale(100%)'); 
 	}
 	function color() {
-		console.log("In color") 
+		console.log("In color"); 
 		// Remove the existing grayscale class.
         video.style.removeProperty('filter');
 	}
@@ -124,7 +124,7 @@
         rand100 = Math.random()*100;
         rand360 = Math.random()*360;
         grayscalestring = 'grayscale(' + rand100 + '%)';
-        transformstring = 'rotate(' + rand360 + 'deg)'
+        transformstring = 'rotate(' + rand360 + 'deg)';
         video.style.setProperty('filter', grayscalestring); 
         video.style.setProperty('transform', transformstring); 
         console.log("Grayscale is: " + rand100 + "%, Rotation is: " + rand360 + " degrees");
