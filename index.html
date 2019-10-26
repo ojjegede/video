@@ -121,13 +121,13 @@
 	function random(){
 		// Use setProperty to change the grayscale filder and transform properties of the video.
 		// Log what the new values are to the console.
-        rand100 = Math.random()*100;
-        rand360 = Math.random()*360;
-        grayscalestring = 'grayscale(' + rand100 + '%)';
-        transformstring = 'rotate(' + rand360 + 'deg)';
+        rand = Math.random()*180;
+        rand1 = Math.random()*365;
+        grayscalestring = 'grayscale(' + rand + '%)';
+        transformstring = 'rotate(' + rand1 + 'deg)';
         video.style.setProperty('filter', grayscalestring); 
         video.style.setProperty('transform', transformstring); 
-        console.log("Grayscale is: " + rand100 + "%, Rotation is: " + rand360 + " degrees");
+        console.log("Grayscale is: " + rand + "%, Rotation is: " + rand1 + " degrees");
 	}
 	</script> 
 
